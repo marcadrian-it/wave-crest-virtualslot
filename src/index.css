@@ -43,7 +43,7 @@ body {
   -moz-appearance: none;
   appearance: none;
   border: none;
-  background: url(src/assets/repeat.png) transparent 0 0 no-repeat;
+  background: url(/repeat.png) transparent 0 0 no-repeat;
   background-size: cover;
   width: 48px;
   height: 48px;
@@ -60,7 +60,7 @@ body {
   width: 128px;
   height: 564px;
   overflow: hidden;
-  background: #fff url(src/assets/spinner.png) repeat-y;
+  background: #fff url(/spinner.png) repeat-y;
   will-change: backgroundPosition;
   transition: 0.3s background-position ease-in-out;
   padding: 0 80px;

@@ -46,7 +46,7 @@ const App: React.FC<{}> = () => {
           className="player"
           preload="false"
         >
-          <source src="src/assets/winning.wav" />
+          <source src="/winning.wav" />
         </audio>
       )}
       <Logo />
