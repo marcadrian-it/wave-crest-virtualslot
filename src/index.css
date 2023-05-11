@@ -136,12 +136,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media screen and (max-width: 1000px) {
-  .spinner-container {
-    transform: translate(-50%, -50%) scale(0.55, 0.55);
-  }
-}
-
 .footer-container {
   position: static;
 }
@@ -157,8 +151,34 @@ button:focus-visible {
   align-items: center;
 }
 
+@media screen and (max-width: 1000px) {
+  .spinner-container {
+    transform: translate(-50%, -50%) scale(0.55, 0.55);
+  }
+  .logo-container {
+    margin-top: 1em;
+  }
+  #repeatButton {
+    bottom: 25%;
+    right: 35%;
+  }
+  .footer {
+    height: 2rem;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .spinner-container {
     transform: translate(-50%, -50%) scale(0.4, 0.4);
+  }
+  .logo-container {
+    margin-top: 0.5em;
+  }
+  #repeatButton {
+    bottom: 20%;
+    right: 30%;
+  }
+  .footer {
+    height: 1.5rem;
   }
 }
