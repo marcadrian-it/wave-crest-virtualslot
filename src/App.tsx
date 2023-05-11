@@ -51,25 +51,27 @@ const App: React.FC<{}> = () => {
       )}
       <Logo />
       <WinnerPopup isOpen={isWinner} onClose={handleClosePopup} />
-      <div className="spinner-container">
-        <Spinner
-          key={`${spinnersKey}-1`}
-          onFinish={handleSpinFinish}
-          timer={1000}
-        />
-        <Spinner
-          key={`${spinnersKey}-2`}
-          onFinish={handleSpinFinish}
-          timer={1400}
-        />
-        <Spinner
-          key={`${spinnersKey}-3`}
-          onFinish={handleSpinFinish}
-          timer={2200}
-        />
-        <div className="gradient-fade"></div>
+      <div className="spinner-repeat-container">
+        <div className="spinner-container">
+          <Spinner
+            key={`${spinnersKey}-1`}
+            onFinish={handleSpinFinish}
+            timer={1000}
+          />
+          <Spinner
+            key={`${spinnersKey}-2`}
+            onFinish={handleSpinFinish}
+            timer={1400}
+          />
+          <Spinner
+            key={`${spinnersKey}-3`}
+            onFinish={handleSpinFinish}
+            timer={2200}
+          />
+          <div className="gradient-fade"></div>
+        </div>
+        <RepeatButton onClick={handleRepeatClick} />
       </div>
-      <RepeatButton onClick={handleRepeatClick} />
       <div className="footer-container">
         <Footer />
       </div>
